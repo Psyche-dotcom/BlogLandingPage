@@ -1,0 +1,46 @@
+/*Primary color*/
+
+$CTA-text:hsl(356, 100%, 66%);
+$CTA-hover-background: hsl(355, 100%, 74%);
+$headings: hsl(208, 49%, 24%);
+
+/*Neutral color*/
+
+$White-text: hsl(0, 0%, 100%);
+$footer-text: hsl(240, 2%, 79%);
+$box-shadow: hsla(240, 2%, 79%, 0.7);
+$body-text: hsl(207, 13%, 34%);
+$footer-background: hsl(240, 10%, 16%);
+
+/*Gradient*/
+$gradient-intro1: hsl(13, 100%, 72%);
+$gradient-intro2: hsl(353, 100%, 62%);
+$body-gra1: hsl(237, 17%, 21%);
+$body-gra2:hsl(237, 23%, 32%);
+
+$large_screen: 900px;
+
+$medium_screen: 650px;
+$medium_screenm: 1000px;
+$medium_screenl: 1300px;
+
+@mixin large {
+    @media (min-width: $large_screen){
+        @content
+    }
+};
+@mixin medium {
+    @media (min-width: $medium_screen){
+        @content
+    }
+};
+@mixin mmedium {
+    @media (max-width: $medium_screenm){
+        @content
+    }
+};
+@mixin lmedium {
+    @media (min-width: $medium_screenl){
+        @content
+    }
+}
